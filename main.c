@@ -3,4 +3,16 @@
 //and randomly call upon one of these items before continuing on
 //must use command line arguments to calculate the tips and taxes
 //Will use local tax 8.75 and tip percentage of 15%
+#include <stdio.h>
+#include "bill.h"
 
+double getMeal(PtrToConstMeal ptr, int num) {
+    return ptr[num].cost; 
+}
+
+int main( int argc, char *argv[] )  {
+
+   printf("Cost: %.2f\n", getMeal(mealTable, 0));
+ 
+  
+}
