@@ -4,14 +4,10 @@
 
 typedef struct { 
 
- long number; 
+ char *item;  
 
- char *name; 
+ double cost; 
 
- char *phone; 
+} Meal, *PtrToMeal; 
 
- double salary; 
-
-} Employee, *PtrToEmployee; 
-
-typedef const Employee *PtrToConstEmployee;
+typedef const Meal *PtrToConstMeal;
